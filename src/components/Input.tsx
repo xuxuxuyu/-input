@@ -1,13 +1,29 @@
 import React from "react";
+import { SizeType } from "../constants";
 import "./styles/index.less"
 
-export default function Input() {
+interface InputProps {
+  addonBefore?: string;
+  addonAfter?: string;
+  sizeType?: SizeType;
+  value?: string;
+  onChange?: (value: string) => void;
+}
 
+export default function Input(props: InputProps) {
+  console.log(props)
+  const { addonBefore, addonAfter } = props
   return (
     <div className="wrapper">
-      <input type="text" className="addonBefore" />
+      {addonBefore ? (
+        <input type="text" className="addonBefore" disabled placeholder={addonBefore}/>
+      ) : null}
+
       <input type="text" className="content" />
-      <input type="text" className="addonAfter" />
+
+      {addonAfter ? (
+        <input type="text" className="addonAfter" disabled placeholder=".com"/>
+      ) : null}
     </div>
   );
 }

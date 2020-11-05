@@ -3,7 +3,13 @@ import ReactDOM from 'react-dom';
 import Input from './components/Input'
 
 ReactDOM.render(
-  <Input />,
+  (
+    <div>
+      <Input addonBefore="https" addonAfter=".com" />
+      <Input />
+    </div>
+  
+  ),
   document.getElementById('root')
 );
 

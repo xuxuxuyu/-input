@@ -1,7 +1,41 @@
 .wrapper {
-  width: 200px;
+  display: flex;
+  width: 400px;
+  justify-content: space-between;
+  margin: 10px;
 
   input {
     display: inline-block;
+    border: 1px solid #d9d9d9;
+    height: 32px;
+    font-size: 12px;
+    color: #0b2525;
+    padding: 0 10px;
+
+    &:focus {
+      outline:none;
+      border-color: #40a9ff;
+      box-shadow: 0 0 0 2px rgba(24, 144, 255, .2);
+    }
+  }
+
+  .addonBefore {
+    border-right: none;
+  }
+
+  .content {
+    width: 100%;
+  }
+
+  .addonAfter {
+    border-left: none;
+  }
+
+  .addonBefore,
+  .addonAfter {
+    width: 42px;
+    background-color: #fafafa;
+    cursor: not-allowed;
+    text-align: center;
   }
 }
