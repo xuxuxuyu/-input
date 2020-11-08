@@ -1,7 +1,7 @@
 {
-  "name": "xuyu",
+  "name": "@xuyu/input",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@babel/core": "7.12.3",
     "@pmmmwh/react-refresh-webpack-plugin": "0.4.2",
@@ -149,5 +149,18 @@
     "presets": [
       "react-app"
     ]
-  }
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.tsx",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xuxuxuyu/xuyu.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xuxuxuyu/xuyu/issues"
+  },
+  "homepage": "https://github.com/xuxuxuyu/xuyu#readme"
 }
